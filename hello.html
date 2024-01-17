@@ -15,15 +15,14 @@
 
 <body>
     <script>
-        let a = 'hello \u{1f310}';
-        let b = "♻";
-        let c = 123e3;
-        let d = 123e-3;
+        let name = "홍길동"
+        let age = 20
 
-        document.write(a + "<br>")
-        document.write(b + "<br>")
-        document.write(c + "<br>")
-        document.write(d + "<br>")
+        let text1 = "이름: " + name + ",나이:" + age;
+        let text2 = `이름: ${name}, 나이: ${age}`;
+        document.write(text1);
+        document.write(text2);
+
     </script>
 </body>
 
