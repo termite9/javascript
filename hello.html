@@ -15,25 +15,11 @@
 
 <body>
     <script>
-        const product = { name: "컴", code: "235" };
-        document.write("상품명 :" + product.name);
-    </script>
-    <script>
-        let a = 3;
-        let b = 4;
-        let c = 2;
-        a += 7;
-        a--;
-        b -= 2;
-        b++;
+        let mrate;
+        let money = 12000000;
 
-        c %= 5;
-        c = a + b
-
-        document.write(a);
-        document.write(b);
-        document.write(a);
-        document.write(a + b + c);
+        mrate = money * 0.04 / 12
+        document.write(`${money}를 년4%로 은행에 예치하면 월이자는 ${mrate}입니다`);
     </script>
 </body>
 
