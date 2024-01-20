@@ -14,15 +14,26 @@
 </head>
 
 <body>
-    <script> //70점 이상이면 합격 아니면 불합격판별하는프로그램
+    <script> //학점계산하기
         let score = 60;
 
-        if (score >= 70) {
-            document.write("합격");
+        if (score >= 90) {
+            grade = "A";
         }
-        else {
-            document.write("불합격");
+        else if (score >= 80) {
+            grade = "B";
         }
+        else if (score >= 70) {
+            grade = "C";
+        }
+        else if (score >= 60) {
+            grade = "D";
+        }
+        else if (score >= 50) {
+            grade = "E";
+        }
+        document.write("점수:" + score + ", 학점:" + grade);
+
     </script>
 </body>
 
