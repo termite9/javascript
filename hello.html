@@ -14,12 +14,15 @@
 </head>
 
 <body>
-    <script>
-        let mrate;
-        let money = 12000000;
+    <script> //70점 이상이면 합격 아니면 불합격판별하는프로그램
+        let score = 60;
 
-        mrate = money * 0.04 / 12
-        document.write(`${money}를 년4%로 은행에 예치하면 월이자는 ${mrate}입니다`);
+        if (score >= 70) {
+            document.write("합격");
+        }
+        else {
+            document.write("불합격");
+        }
     </script>
 </body>
 
