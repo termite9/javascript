@@ -17,21 +17,26 @@
     <p id="show"></p>
 
     <script>
-        class Member {
-            constructor(name, age) {
-                this.name = name;
-                this.age = age;
-            }
-            getAge() {
-                return "나이는" + this.age + "살입니다.";
-            }
-        }
-        const mem1 = new Member("홍길동", 30);
-        let text = "";
-        text += mem1.name + "<br>";
-        text += mem1.getAge();
 
+
+
+    </script>
+    <script>
+        const set1 = new Set();
+        set1.add("apple");
+        set1.add("orange");
+        set1.add("banana");
+
+
+
+        set1.delete("apple");
+        let text = "";
+        for (let value of set1) {
+            text += value + "<br>";
+        }
         document.getElementById("show").innerHTML = text;
+
+
     </script>
 
 </body>
