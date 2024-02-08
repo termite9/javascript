@@ -14,27 +14,16 @@
 </head>
 
 <body>
-    <p id="show"></p>
+    <form name="form1">
+        이름:<input type="text" name="name"><br>
+        <button onclick="get_name()">버튼</button>
+    </form>
 
     <script>
-
-
-
-    </script>
-    <script>
-        const set1 = new Set();
-        set1.add("apple");
-        set1.add("orange");
-        set1.add("banana");
-
-
-
-        set1.delete("apple");
-        let text = "";
-        for (let value of set1) {
-            text += value + "<br>";
+        function get_name() {
+            let text = document.form1.name.value;
+            alert(text);
         }
-        document.getElementById("show").innerHTML = text;
 
 
     </script>
