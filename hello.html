@@ -14,17 +14,19 @@
 </head>
 
 <body>
-    <form name="form1">
-        이름:<input type="text" name="name"><br>
-        <button onclick="get_name()">버튼</button>
-    </form>
+
+    <div id="parent">
+        <p>안녕1</p>
+        <p>안녕2</p>
+        <p class="a">안녕3</p>
+        <p class="a">안녕4</p>
+        <p>안녕5</p>
+    </div>
+    <p id="show"></p>
 
     <script>
-        function get_name() {
-            let text = document.form1.name.value;
-            alert(text);
-        }
-
+        const x = document.querySelectorAll("p.a");
+        x.style.backgroundColor = "red";
 
     </script>
 
