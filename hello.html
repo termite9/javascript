@@ -14,19 +14,14 @@
 </head>
 
 <body>
+    <p id="p1">hi</p>
 
-    <div id="parent">
-        <p>안녕1</p>
-        <p>안녕2</p>
-        <p class="a">안녕3</p>
-        <p class="a">안녕4</p>
-        <p>안녕5</p>
-    </div>
-    <p id="show"></p>
 
     <script>
-        const x = document.querySelectorAll("p.a");
-        x.style.backgroundColor = "red";
+        const x = document.getElementById("p1");
+        x.style.color = "blue";
+        x.style.backgroundColor = "yellow";
+        x.style.border = "solid 5px black"
 
     </script>
 
