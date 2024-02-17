@@ -14,18 +14,16 @@
 </head>
 
 <body>
-    <input placeholder="키를입력하세요">
-    <p id="show"></p>
+    <p id="s"></p>
     <script>
-        const input = document.querySelector("input");
-        let text = "";
+        setInterval(func1, 1000);
 
-        input.addEventListener("keyup", changeUpper);
-        function changeUpper(e) {
-            input.value = input.value.toUpperCase();
+        function func1() {
+            const d = new Date();
+            document.getElementById("s").innerHTML = d;
         }
-    </script>
 
+    </script>
 
 
 
