@@ -14,16 +14,20 @@
 </head>
 
 <body>
-    <p id="p1">hi</p>
-
-
+    <input placeholder="키를입력하세요">
+    <p id="show"></p>
     <script>
-        const x = document.getElementById("p1");
-        x.style.color = "blue";
-        x.style.backgroundColor = "yellow";
-        x.style.border = "solid 5px black"
+        const input = document.querySelector("input");
+        let text = "";
 
+        input.addEventListener("keyup", changeUpper);
+        function changeUpper(e) {
+            input.value = input.value.toUpperCase();
+        }
     </script>
+
+
+
 
 </body>
 
