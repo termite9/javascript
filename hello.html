@@ -14,19 +14,17 @@
 </head>
 
 <body>
-    <p id="s"></p>
+    <p id="show"></p>
+
     <script>
-        setInterval(func1, 1000);
-
-        function func1() {
-            const d = new Date();
-            document.getElementById("s").innerHTML = d;
+        try {
+            alertt("안녕하세요");
+            document.write("test");
         }
-
+        catch (err) {
+            document.getElementById("show").innerHTML = err.message;
+        }    
     </script>
-
-
-
 </body>
 
 </html>
